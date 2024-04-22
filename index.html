@@ -21,6 +21,7 @@
   </head>
 
   <body>
+    <!-- Section 1 Navbar -->
     <header class="header">
       <div class="logo Center">
         <img src="images/logo/Booki.png" alt="Logo Booki" />
@@ -32,6 +33,8 @@
         </div>
       </nav>
     </header>
+
+    <!-- Section 2 Recherche-->
     <main class="main-container">
       <section class="formulaire">
         <div class="forml-text">
@@ -42,57 +45,49 @@
             En plein centre-ville ou en pleine nature
           </p>
         </div>
+
         <div class="recherche Center">
           <div class="icone-search Center">
             <i class="fa-solid fa-location-dot Center"></i>
           </div>
-          <div>
-            <input
-              class="search-bar"
-              type="search"
-              name="barre de recherche"
-              placeholder="Marseille, France"
-            />
-          </div>
-          <div class="button-search Center">Rechercher</div>
-          <div class="button-mobile Center">
+          <input
+            class="search-bar"
+            type="search"
+            name="barre de recherche"
+            placeholder="Marseille, France"
+          />
+          <button class="button-search Center">Rechercher</button>
+          <button class="button-mobile Center">
             <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
+          </button>
         </div>
+
         <div class="FiltreBar">
-          <div class="filtre-title"><h4>Filtres</h4></div>
-          <div class="filtres">
-            <div class="filtres-content">
-              <div>
-                <i class="fa-solid fa-money-bill-wave filtresIcons Center"></i>
-              </div>
-              <div>&Eacute;conomique</div>
-            </div>
-            <div class="filtres-content">
-              <div><i class="fa-solid fa-person filtresIcons Center"></i></div>
-              <div>Familial</div>
-            </div>
-            <div class="filtres-content">
-              <div><i class="fa-solid fa-heart filtresIcons Center"></i></div>
-              <div>Romantique</div>
-            </div>
-            <div class="filtres-content">
-              <div><i class="fa-solid fa-fire filtresIcons Center"></i></div>
-              <div>Nos pépites</div>
-            </div>
-          </div>
+          <h3 class="filtre-title">Filtres</h3>
+          <ul class="filtres">
+            <li class="filtres-content">
+              <i class="fa-solid fa-money-bill-wave filtresIcons Center"></i
+              >&Eacute;conomique
+            </li>
+            <li class="filtres-content">
+              <i class="fa-solid fa-person filtresIcons Center"></i>Familial
+            </li>
+            <li class="filtres-content">
+              <i class="fa-solid fa-heart filtresIcons Center"></i>Romantique
+            </li>
+            <li class="filtres-content">
+              <i class="fa-solid fa-fire filtresIcons Center"></i>Nos pépites
+            </li>
+          </ul>
         </div>
-        <div class="info-Bar">
-          <div class="info-icon icon">
-            <i class="fa-solid fa-info"></i>
-          </div>
-          <div>
-            <p class="info-Text">
-              Plus de 5OO logements sont disponibles dans cette ville
-            </p>
-          </div>
+
+        <div class="info">
+          <i class="fa-solid fa-info"></i>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
       </section>
+
+      <!-- Section 2 Hebergements and populaires -->
 
       <div class="hebergements-and-populaires">
         <section id="section1" class="hebergements">
@@ -269,6 +264,7 @@
           </div>
           <article><h3 class="margin-title">Afficher plus</h3></article>
         </section>
+
         <section class="populaires">
           <div class="populaires-title">
             <h2 class="section-title">Les plus populaires</h2>
@@ -361,61 +357,78 @@
           </div>
         </section>
       </div>
+
+      <!-- Section 4 Activities -->
+
       <section id="section2" class="activites">
         <h2 class="section-title">Activités à Marseille</h2>
         <div class="activites-cards">
-          <article class="activites-content">
-            <img src="images/activites/reno-laithienne.jpg" alt="Vieux-Port" />
-            <div class="activites-title">
-              <h3 class="card-title">Vieux-Port</h3>
-            </div>
-          </article>
-          <article class="activites-content">
-            <img
-              src="images/activites/paul-hermann.jpg"
-              alt="Fort de Pomègues"
-            />
-            <div class="activites-title">
-              <h3 class="card-title">Fort de Pomègues</h3>
-            </div>
-          </article>
-          <article class="activites-content">
-            <img
-              src="images/activites/kilyan-sockalingum.jpg"
-              alt="Parc national des Calanques"
-            />
-            <div class="activites-title">
-              <h3 class="card-title">Parc national des Calanques</h3>
-            </div>
-          </article>
-          <article class="activites-content">
-            <img
-              src="images/activites/florian-wehde.jpg"
-              alt="Notre-Dame-de-la-Garde"
-            />
-            <div class="activites-title">
-              <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
-            </div>
-          </article>
+          <a href="#">
+            <article class="activites-content">
+              <img
+                src="images/activites/reno-laithienne.jpg"
+                alt="Vieux-Port"
+              />
+              <div class="activites-title">
+                <h3 class="card-title">Vieux-Port</h3>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="activites-content">
+              <img
+                src="images/activites/paul-hermann.jpg"
+                alt="Fort de Pomègues"
+              />
+              <div class="activites-title">
+                <h3 class="card-title">Fort de Pomègues</h3>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="activites-content">
+              <img
+                src="images/activites/kilyan-sockalingum.jpg"
+                alt="Parc national des Calanques"
+              />
+              <div class="activites-title">
+                <h3 class="card-title">Parc national des Calanques</h3>
+              </div>
+            </article>
+          </a>
+          <a href="#">
+            <article class="activites-content">
+              <img
+                src="images/activites/florian-wehde.jpg"
+                alt="Notre-Dame-de-la-Garde"
+              />
+              <div class="activites-title">
+                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+              </div>
+            </article>
+          </a>
         </div>
       </section>
     </main>
+
+    <!-- Section 5 Footer -->
+
     <footer class="footer">
       <div class="footer-content">
         <h3>&Agrave; propos</h3>
-        <p class="card-title">Fonctionnement du site</p>
-        <p>Conditions générales</p>
-        <p>Données et confidentialité</p>
+        <a>Fonctionnement du site</a>
+        <a>Conditions générales</a>
+        <a>Données et confidentialité</a>
       </div>
       <div class="footer-content">
         <h3>Nos hébergements</h3>
-        <p>Charte qualité</p>
-        <p>Proposer votre hôtel</p>
+        <a>Charte qualité</a>
+        <a>Proposer votre hôtel</a>
       </div>
       <div class="footer-content">
         <h3>Assistance</h3>
-        <p>Centre d’aide</p>
-        <p>Nous contacter</p>
+        <a>Centre d’aide</a>
+        <a>Nous contacter</a>
       </div>
     </footer>
   </body>
